@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Thing</title>
+    <script src="transmission.js"></script>
+    <script src="/eel.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="first-half">
+            <center style="position: relative; top: 200px;">
+                <input type="text" id="data" class="form-control" style="width: 70%; margin-bottom: 15px;">
+                <button type="button" class="btn btn-light" onclick="generateQRCode()">Create QR Code</button>
+            </center>
+        </div>
+        <div class="second-half">
+            <center style="position: relative; top: 85px;">
+                <img id="qr" src="" width="60%;" class="shadow-lg">
+            </center>
+        </div>
+        <div class="bottom-half">
+            <center>
+                <h3 style="width: 100%;" id="qrCodeDescription"></h3>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
